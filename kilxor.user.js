@@ -1,5 +1,5 @@
 // ==UserScript== 
-// @name           kilxor_20180430
+// @name           kilxor_20180628
 // @include        https://ilx.wh3rd.net/* 
 // @include        https://ilx.p3r.net/*
 // @include        https://www.ilxor.com/*
@@ -53,7 +53,7 @@ if (posts.snapshotLength != 0) {
 					if (nuke) {
 						div.hidden = true;
 					} else {
-						div.innerHTML = "<div>Post by " + poster + " deleted<br /><hr/></div>";
+						div.innerHTML = "<div>Post by " + poster + " deleted. " + div.querySelector('.bookmark').outerHTML + "<br /><hr/></div>";
 					}
 					blocked = true;
 					break;
